@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="paper">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>机场和 VPN 有什么区别 新手先看懂这几个概念 · 小路带你飞</title>
+<meta name="description" content="机场和 VPN 有什么区别？小路带你飞用通俗的例子讲清机场服务、VPN、节点和客户端的关系，介绍选择前要看的设备支持、使用步骤和隐私说明，帮助新手理清思路。">
+<meta name="keywords" content="机场和VPN的区别,机场是什么,VPN是什么,节点是什么,机场入门">
+<meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://xiaolufei.blog/posts/jichang-vpn-difference/">
+<meta property="og:title" content="机场和 VPN 有什么区别 新手先看懂这几个概念">
+<meta property="og:description" content="机场和 VPN 有什么区别？小路带你飞用通俗的例子讲清机场服务、VPN、节点和客户端的关系，介绍选择前要看的设备支持、使用步骤和隐私说明，帮助新手理清思路。">
+<meta property="og:url" content="https://xiaolufei.blog/posts/jichang-vpn-difference/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="小路带你飞">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://xiaolufei.blog/assets/media/d0e1710a-9c8b-4762-9357-b618425279cf.png"><meta property="og:image:alt" content="小路带你飞">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="机场和 VPN 有什么区别 新手先看懂这几个概念">
+<meta name="twitter:description" content="机场和 VPN 有什么区别？小路带你飞用通俗的例子讲清机场服务、VPN、节点和客户端的关系，介绍选择前要看的设备支持、使用步骤和隐私说明，帮助新手理清思路。">
+<meta name="twitter:image" content="https://xiaolufei.blog/assets/media/d0e1710a-9c8b-4762-9357-b618425279cf.png">
+<meta name="author" content="小路带你飞"><meta property="article:published_time" content="2026-10-16T02:12:39&#43;08:00"><meta property="article:modified_time" content="2026-10-16T21:00:24&#43;08:00">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://xiaolufei.blog/posts/jichang-vpn-difference/#article","@type":"BlogPosting","author":{"@type":"Person","name":"小路带你飞"},"dateModified":"2026-10-16T21:00:24+08:00","datePublished":"2026-10-16T02:12:39+08:00","description":"机场和 VPN 有什么区别？小路带你飞用通俗的例子讲清机场服务、VPN、节点和客户端的关系，介绍选择前要看的设备支持、使用步骤和隐私说明，帮助新手理清思路。","headline":"机场和 VPN 有什么区别 新手先看懂这几个概念","inLanguage":"zh-CN","mainEntityOfPage":{"@id":"https://xiaolufei.blog/posts/jichang-vpn-difference/","@type":"WebPage"},"url":"https://xiaolufei.blog/posts/jichang-vpn-difference/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://xiaolufei.blog/","name":"小路带你飞","position":1},{"@type":"ListItem","item":"https://xiaolufei.blog/posts/jichang-vpn-difference/","name":"机场和 VPN 有什么区别 新手先看懂这几个概念","position":2}]}]}</script>
+
+<script>(()=>{let mode='system';try{const saved=localStorage.getItem('reader-theme');if(['system','light','dark'].includes(saved))mode=saved}catch{}const root=document.documentElement;root.dataset.colorMode=mode;root.classList.toggle('dark',mode==='dark'||(mode==='system'&&matchMedia('(prefers-color-scheme: dark)').matches))})();</script>
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/style.css">
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/advertisements.css">
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/search.css"><script defer src="https://xiaolufei.blog/assets/theme/search.js"></script>
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/layouts.css"><link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/effects.css"><link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/skin.css">
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/viewer.css">
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/reader.css">
+<link rel="icon" href="https://xiaolufei.blog/assets/media/d0e1710a-9c8b-4762-9357-b618425279cf.png">
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/artalk.css"><script defer src="https://xiaolufei.blog/assets/theme/artalk.js"></script>
+<script defer src="https://xiaolufei.blog/assets/theme/theme.js"></script>
+<script defer src="https://xiaolufei.blog/assets/theme/reader.js"></script>
+<script defer src="https://xiaolufei.blog/assets/theme/viewer.js"></script>
+<script defer src="https://xiaolufei.blog/assets/theme/image-viewer.js"></script>
+
+<script defer src="https://xiaolufei.blog/assets/theme/interactions.js"></script>
+
+<meta name="msvalidate.01" content="3D562902FFD6655EA5B649095B7D8365" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9NJRJJ7T9S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9NJRJJ7T9S');
+</script>
+
+<script defer src="https://xiaolufei.blog/assets/xblog/google-analytics.js" data-xblog-google-analytics="G-9NJRJJ7T9S" data-site-hosts="www.xiaolufei.blog,xiaolufei.blog"></script></head>
+
+<body class="reader-page theme-paper article-page">
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-header">
+<div class="header-inner">
+<a class="brand" href="https://xiaolufei.blog/"><img src="https://xiaolufei.blog/assets/media/d0e1710a-9c8b-4762-9357-b618425279cf.png" alt="" width="38" height="38"><span>小路带你飞</span></a>
+<nav id="site-navigation" aria-label="站点导航"><a href="https://xiaolufei.blog/">首页</a></nav>
+<a class="search-toggle" href="https://xiaolufei.blog/search/" data-open-dialog="search-dialog" aria-haspopup="dialog" aria-controls="search-dialog" aria-label="搜索" title="搜索"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></a>
+<button id="theme-mode" class="theme-toggle theme-cycle" type="button" aria-label="明暗模式：跟随系统，点击切换为明亮" title="跟随系统 · 点击切换为明亮">
+<svg class="theme-icon-system" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+<svg class="theme-icon-moon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.2 15.5A8.5 8.5 0 0 1 8.5 3.8 8.5 8.5 0 1 0 20.2 15.5Z"/></svg>
+<svg class="theme-icon-sun" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+</button>
+<span id="theme-mode-status" class="visually-hidden" role="status" aria-live="polite"></span>
+<button id="menu-toggle" class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="打开菜单" title="打开菜单">
+<svg class="menu-icon-open" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg class="menu-icon-close" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg>
+</button>
+</div>
+</header>
+
+<div class="page-viewport article-viewport"><div class="page-scroll article-scroll">
+<main id="main" tabindex="-1" class="paper-workspace theme-workspace theme-article">
+
+<nav class="breadcrumbs" aria-label="面包屑导航"><ol><li><a href="https://xiaolufei.blog/">小路带你飞</a></li><li><span aria-current="page">机场和 VPN 有什么区别 新手先看懂这几个概念</span></li></ol></nav>
+
+
+<div class="paper-reading"><div class="article-rail">
+<aside class="toc"><div>本篇目录</div><nav aria-label="文章目录"><a class="level-2" href="#heading">机场服务通常提供什么</a><a class="level-2" href="#vpn-">VPN 是怎样工作的</a><a class="level-2" href="#heading-1">节点和客户端分别负责什么</a><a class="level-2" href="#heading-2">新手应该怎样选</a><a class="level-2" href="#heading-3">名字不能代表全部体验</a></nav></aside>
+</div><div class="paper-leaf">
+<article data-pagefind-body>
+<header class="article-header">
+<div class="eyebrow" data-pagefind-ignore>
+书中一页</div>
+<h1 data-pagefind-meta="title">机场和 VPN 有什么区别 新手先看懂这几个概念</h1>
+<div class="metadata" data-pagefind-ignore><span>小路带你飞</span><time datetime="2026-10-16T02:12:39&#43;08:00">2026-10-16</time><span><span id="page-views">—</span> 次阅读</span></div>
+<div class="chips" data-pagefind-ignore><a href="https://xiaolufei.blog/categories/jichang-vpn/">机场与VPN</a></div>
+</header>
+<div class="prose"><p>第一次接触机场和 VPN，你可能会觉得很奇怪：明明都跟上网有关，为什么有的要下载一个软件，有的却给你一条订阅链接？</p>
+<p>先记住一点：VPN 是一类网络技术和相关产品的名称，“机场”则是部分中文网络用户对代理订阅服务的俗称。两者在用途上有交集，但不能只看名字就认定功能完全一样。</p>
+<h2 id="heading">机场服务通常提供什么</h2>
+<p>这里说的机场，和坐飞机的机场没有关系。你购买的通常是一个有使用期限、流量额度或其他限制的服务，服务商提供可连接的节点，并通过订阅链接等方式把连接信息交给你。</p>
+<p>可以把它想成一份出行服务：服务商准备路线，你选择合适的路线出发。具体能去哪里、能用多久、怎么收费，需要看套餐说明，不能把其他家的规则直接套过来。</p>
+<p>有些服务自带软件，有些需要配合另外安装的客户端。付款前先看使用教程，能省去“买完才发现不知道怎么用”的麻烦。</p>
+<h2 id="vpn-">VPN 是怎样工作的</h2>
+<p>常见 VPN 会在设备和 VPN 服务器之间建立加密连接。经过这条连接访问网站时，网站通常看到的是服务器的网络地址。这个基本过程可以参考 <a href="https://support.mozilla.org/en-US/kb/what-mozilla-vpn-and-how-does-it-work">Mozilla 的 VPN 原理说明</a>。</p>
+<p>你不必先学懂加密算法。刚开始更需要弄清楚：这款产品支持哪些设备、哪些应用会经过它，以及连接失败时能在哪里找到帮助。</p>
+<h2 id="heading-1">节点和客户端分别负责什么</h2>
+<p>节点可以理解成你选择的一个连接入口。列表里出现的地区名称，通常是在告诉你线路或出口与哪个地区有关，具体含义仍要看服务商的标注。</p>
+<p>客户端是你用来操作连接的软件。你在里面导入订阅、选择节点、打开或关闭连接。客户端和服务商可能由不同的团队提供，因此“软件下载好了”和“已经买到服务”是两件事。</p>
+<p>例如，你装好了一个播放器，也不代表已经订阅了某个视频平台。这个比方不完全对应技术细节，但能帮助你分清软件和服务的关系。</p>
+<h2 id="heading-2">新手应该怎样选</h2>
+<p>如果你希望操作简单，可以优先看安装、登录、连接这几个步骤是否清楚。如果你愿意自己管理订阅，则要确认服务与客户端兼容，并检查有没有适合你设备的教程。</p>
+<p>无论选择哪一种，都值得先回答三个问题：平时在哪台设备上用，主要用来完成什么事情，每个月大约愿意花多少钱。答案越具体，越容易缩小选择范围。</p>
+<h2 id="heading-3">名字不能代表全部体验</h2>
+<p>“机场”“VPN”“专线”等标签，都不能单独证明一家服务更快、更稳定。实际体验还要结合你的网络、使用时间和套餐限制来判断。</p>
+<p>隐私方面也别只看宣传语。登录了某个网站的账号后，网站仍然可以识别这个账号的活动；换一个网络出口不会让账号记录自动消失。关于这一点，可参考 <a href="https://protonvpn.com/blog/can-be-tracked-using-vpn">Proton 对 VPN 与网站识别方式的说明</a>。</p>
+<p>先分清服务、软件和节点，再去比较套餐，你就不容易被一长串名词带着走。选择前，把设备支持、费用和使用步骤看明白，比记住很多缩写更有用。</p>
+</div>
+<div class="article-likes" data-pagefind-ignore>
+<button id="page-like" class="like-button" type="button" aria-pressed="false" aria-describedby="page-like-message" disabled>
+<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+<span id="page-like-label">点赞</span><span id="page-like-count">—</span>
+</button><p id="page-like-message" role="status"></p>
+</div>
+
+<nav class="pagination" aria-label="相邻文章" data-pagefind-ignore><a href="https://xiaolufei.blog/posts/choose-jichang-beginners/">← 上一篇</a></nav>
+<section class="comments-section" data-pagefind-ignore><h2>评论</h2><div id="comments"></div></section>
+</article>
+</div></div>
+
+</main>
+</div>
+<button id="back-to-top" class="back-to-top" type="button" aria-label="返回顶部" title="返回顶部" hidden>
+<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14M12 20V8m-5 5 5-5 5 5"/></svg>
+</button>
+</div>
+
+<footer class="site-footer">
+
+<span>© 2026小路的博客</span>
+</footer>
+
+
+
+<dialog id="search-dialog" class="reader-dialog site-search" aria-labelledby="search-title" data-reader-dialog data-pagefind-ignore>
+<header class="reader-dialog-header"><h2 id="search-title">搜索文章</h2><button class="dialog-close" type="button" data-close-dialog aria-label="关闭搜索" title="关闭搜索">×</button></header>
+<div class="reader-dialog-body">
+
+<div id="site-search-ui" data-module="https://xiaolufei.blog/pagefind/pagefind-component-ui.js" data-stylesheet="https://xiaolufei.blog/pagefind/pagefind-component-ui.css" hidden>
+
+<pagefind-config bundle-path="https://xiaolufei.blog/pagefind/" base-url="https://xiaolufei.blog/" lang="zh-cn" no-worker></pagefind-config>
+<pagefind-input placeholder="搜索文章标题或正文"></pagefind-input>
+<pagefind-summary></pagefind-summary>
+<pagefind-results></pagefind-results>
+</div>
+<p id="search-status" class="search-status" role="status">正在加载搜索…</p>
+<button id="search-retry" class="button" type="button" hidden>重新加载</button>
+
+</div>
+</dialog>
+
+<script id="blog-comments-config" type="application/json">{"comments":true,"likes":true,"locale":"zh-CN","pageKey":"/p/495ad715-d0f5-4253-a484-c93a85419cfb/","pageTitle":"机场和 VPN 有什么区别 新手先看懂这几个概念","server":"https://upfqpobmiewm.sealosgzg.site","site":"xblog-c12d4d98-1621-4683-befd-db0fba741ea1","views":true,"viewsBase":0}</script>
+
+</body>
+</html>

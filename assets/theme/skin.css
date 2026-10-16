@@ -1,0 +1,313 @@
+/* 旧书纸：左侧书签、首篇导读与双栏刊页；正文像展开的书页而非通用卡片。 */
+:root {
+  --bg: #e7dfcd;
+  --surface: #faf3e3;
+  --text: #473c2d;
+  --muted: #7e715c;
+  --line: #cdbf9f;
+  --accent: #87502f;
+  --soft: #eee2c8;
+  --code: #ece2cd;
+  --scrollbar: #b6a17a;
+  --radius: 1px;
+  --paper-shadow: #cabc9c;
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
+}
+:root.dark {
+  --bg: #201d17;
+  --surface: #2c281f;
+  --text: #ede2cb;
+  --muted: #bbae91;
+  --line: #564b35;
+  --accent: #e2b685;
+  --soft: #3c3323;
+  --code: #342e22;
+  --scrollbar: #796548;
+  --paper-shadow: #13110d;
+}
+.theme-paper {
+  background-image: radial-gradient(var(--line) 0.45px, transparent 0.55px);
+  background-size: 12px 13px;
+}
+.theme-paper .site-header {
+  border-bottom: 0;
+}
+.theme-paper .header-inner {
+  max-width: 1340px;
+  min-height: 76px;
+}
+.theme-paper .brand {
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  font-size: 22px;
+}
+.paper-workspace {
+  max-width: 1260px;
+  padding: 30px 38px 48px;
+  margin: 6px auto 32px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow:
+    6px 6px 0 -1px var(--surface),
+    6px 6px 0 var(--line),
+    12px 12px 0 -1px var(--surface),
+    12px 12px 0 var(--line),
+    0 18px 36px -20px var(--paper-shadow);
+}
+.paper-masthead {
+  padding: 0 0 30px;
+  margin-bottom: 30px;
+  border-bottom: 4px double var(--text);
+  text-align: center;
+}
+.paper-edition {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+.paper-masthead h1 {
+  font-size: clamp(34px, 4.8vw, 64px);
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 24px 0 14px;
+  overflow-wrap: anywhere;
+}
+.paper-masthead > p {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0 auto;
+  max-width: 38em;
+}
+.paper-rule {
+  margin: 20px auto 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 190px;
+  color: var(--accent);
+  font-size: 10px;
+}
+.paper-rule::before,
+.paper-rule::after {
+  content: "";
+  height: 1px;
+  background: var(--line);
+  flex: 1;
+}
+.paper-columns {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 30px;
+  align-items: start;
+}
+.paper-columns > .home-rail {
+  grid-column: 1;
+  grid-row: 1;
+}
+.paper-editorial {
+  grid-column: 2;
+  grid-row: 1;
+  border-left: 1px solid var(--line);
+  padding-left: 30px;
+}
+.paper-workspace .home-rail {
+  gap: 24px;
+}
+.paper-workspace .sidebar-section h2 {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.22em;
+  color: var(--accent);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 10px;
+}
+.paper-workspace .theme-list-heading {
+  margin-bottom: 18px;
+}
+.paper-workspace .theme-list-title {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+}
+.paper-entries {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 28px;
+}
+.paper-entries .paper-entry {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  border-bottom: 1px solid var(--line);
+  padding: 24px 0;
+}
+.paper-entry:first-child {
+  grid-column: 1 / -1;
+  padding-top: 4px;
+  border-bottom: 3px double var(--line);
+  padding-bottom: 28px;
+}
+.paper-entry:first-child h2 {
+  font-size: 34px;
+  font-weight: 600;
+}
+.paper-entry h2 {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.paper-entry .entry-categories {
+  margin-bottom: 12px;
+  letter-spacing: 0.1em;
+}
+.paper-entry .card-summary {
+  line-height: 2.05;
+}
+.paper-entry:first-child .card-summary::first-letter {
+  font-size: 2em;
+  color: var(--accent);
+  font-weight: 500;
+}
+.paper-byline {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 8px;
+}
+.paper-reading {
+  display: grid;
+  grid-template-columns: 186px minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+.paper-leaf {
+  padding-left: 32px;
+  border-left: 1px solid var(--line);
+}
+.paper-workspace .article-header {
+  padding: 8px 0 28px;
+  border-bottom: 4px double var(--text);
+  text-align: center;
+}
+.paper-workspace .article-header h1 {
+  font-size: clamp(30px, 3.5vw, 44px);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.paper-workspace .article-header .metadata,
+.paper-workspace .article-header .chips {
+  justify-content: center;
+}
+.paper-workspace .prose {
+  line-height: 2.15;
+}
+.paper-workspace .prose h2 {
+  font-weight: 500;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 10px;
+}
+.paper-workspace .ad-card {
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--soft);
+}
+.paper-workspace .ad-copy {
+  padding: 14px;
+}
+.theme-paper .site-footer {
+  border: 0;
+}
+@media (max-width: 1100px) {
+  .paper-workspace {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+  .paper-columns {
+    grid-template-columns: 168px minmax(0, 1fr);
+    gap: 24px;
+  }
+  .paper-editorial {
+    padding-left: 24px;
+  }
+  .paper-entries {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .paper-entry:first-child h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 980px) {
+  .paper-reading {
+    display: flex;
+    flex-direction: column;
+  }
+  .paper-leaf {
+    width: 100%;
+    order: 0;
+    border: 0;
+    padding: 0;
+  }
+  .paper-reading .article-rail {
+    width: 100%;
+    order: 1;
+  }
+}
+@media (max-width: 760px) {
+  .paper-workspace {
+    width: calc(100% - 28px);
+    padding: 22px 20px 30px;
+    margin: 8px auto 24px;
+    box-shadow:
+      4px 4px 0 -1px var(--surface),
+      4px 4px 0 var(--line);
+  }
+  .paper-masthead {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+  }
+  .paper-masthead h1 {
+    font-size: 34px;
+    letter-spacing: 0.12em;
+  }
+  .paper-edition {
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+  .paper-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .paper-editorial {
+    order: 0;
+    width: 100%;
+    padding: 0;
+    border: 0;
+  }
+  .paper-columns > .home-rail {
+    order: 1;
+    width: 100%;
+  }
+  .paper-entry:first-child h2 {
+    font-size: 27px;
+  }
+  .paper-entry h2 {
+    font-size: 24px;
+  }
+}
+.paper-columns.paper-archive {
+  display: block;
+}
+.paper-archive .paper-editorial {
+  padding: 0;
+  border: 0;
+}
