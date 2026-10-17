@@ -2,54 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://xiaolufei.blog/</loc>
-    <lastmod>2026-10-16T13:11:12Z</lastmod>
+    <lastmod>2026-10-17T08:20:00Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/categories/ai-tools/</loc>
-    <lastmod>2026-10-16T13:11:12Z</lastmod>
+    <lastmod>2026-10-17T08:20:00Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/categories/jichang-vpn/</loc>
-    <lastmod>2026-10-16T13:11:12Z</lastmod>
+    <lastmod>2026-10-17T08:20:00Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xiaolufei.blog/page/2/</loc>
+    <lastmod>2026-10-17T08:19:05Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/ai-prompt-templates/</loc>
-    <lastmod>2026-10-16T12:57:14Z</lastmod>
+    <lastmod>2026-10-17T08:20:00Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/ai-tools-beginners/</loc>
-    <lastmod>2026-10-16T12:59:50Z</lastmod>
+    <lastmod>2026-10-17T08:20:00Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/choose-jichang-beginners/</loc>
-    <lastmod>2026-10-16T13:00:20Z</lastmod>
+    <lastmod>2026-10-17T08:20:00Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/choose-jichang-node/</loc>
-    <lastmod>2026-10-16T13:00:13Z</lastmod>
+    <lastmod>2026-10-17T08:20:00Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xiaolufei.blog/posts/daily-2026-10-17-rule-vs-global/</loc>
+    <lastmod>2026-10-17T01:02:52Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/jichang-100gb-data-plan/</loc>
-    <lastmod>2026-10-16T13:00:17Z</lastmod>
+    <lastmod>2026-10-17T08:20:00Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/jichang-monthly-vs-yearly/</loc>
-    <lastmod>2026-10-16T12:59:57Z</lastmod>
+    <lastmod>2026-10-17T08:20:00Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/jichang-subscription-guide/</loc>
-    <lastmod>2026-10-16T13:00:00Z</lastmod>
+    <lastmod>2026-10-17T08:20:00Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/jichang-vpn-difference/</loc>
-    <lastmod>2026-10-16T13:00:24Z</lastmod>
+    <lastmod>2026-10-17T08:20:00Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/vpn-phone-computer-sharing/</loc>
-    <lastmod>2026-10-16T12:59:54Z</lastmod>
+    <lastmod>2026-10-17T08:20:00Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/vpn-slow-connection-fix/</loc>
-    <lastmod>2026-10-16T13:00:03Z</lastmod>
+    <lastmod>2026-10-17T08:20:00Z</lastmod>
   </url>
 </urlset>
