@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://xiaolufei.blog/</loc>
-    <lastmod>2026-10-19T04:27:34Z</lastmod>
+    <lastmod>2026-10-26T06:35:36Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/categories/ai-tools/</loc>
@@ -10,11 +10,15 @@
   </url>
   <url>
     <loc>https://xiaolufei.blog/categories/jichang-vpn/</loc>
-    <lastmod>2026-10-19T04:27:34Z</lastmod>
+    <lastmod>2026-10-26T06:35:36Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xiaolufei.blog/categories/jichang-vpn/page/2/</loc>
+    <lastmod>2026-10-26T01:02:46Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/page/2/</loc>
-    <lastmod>2026-10-19T04:27:34Z</lastmod>
+    <lastmod>2026-10-26T06:35:36Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/ai-prompt-templates/</loc>
@@ -38,7 +42,11 @@
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/daily-2026-10-18-vpn-vs-incognito/</loc>
-    <lastmod>2026-10-18T01:06:47Z</lastmod>
+    <lastmod>2026-10-26T06:35:36Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xiaolufei.blog/posts/daily-2026-10-26-vpn-kill-switch/</loc>
+    <lastmod>2026-10-26T01:02:46Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/jichang-100gb-data-plan/</loc>
