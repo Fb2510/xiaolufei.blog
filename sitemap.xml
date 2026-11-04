@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://xiaolufei.blog/</loc>
-    <lastmod>2026-11-03T01:47:26Z</lastmod>
+    <lastmod>2026-11-04T03:23:02Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/categories/ai-tools/</loc>
@@ -10,15 +10,19 @@
   </url>
   <url>
     <loc>https://xiaolufei.blog/categories/jichang-vpn/</loc>
-    <lastmod>2026-11-02T07:33:52Z</lastmod>
+    <lastmod>2026-11-04T03:23:02Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/categories/jichang-vpn/page/2/</loc>
-    <lastmod>2026-11-02T07:33:52Z</lastmod>
+    <lastmod>2026-11-04T03:23:02Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/page/2/</loc>
-    <lastmod>2026-11-03T01:47:26Z</lastmod>
+    <lastmod>2026-11-04T03:23:02Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xiaolufei.blog/page/3/</loc>
+    <lastmod>2026-11-04T01:00:36Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/ai-prompt-templates/</loc>
@@ -74,7 +78,11 @@
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/daily-2026-11-03-ai-meeting-decisions/</loc>
-    <lastmod>2026-11-03T01:08:38Z</lastmod>
+    <lastmod>2026-11-04T03:23:02Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xiaolufei.blog/posts/daily-2026-11-04-vpn-captcha-check/</loc>
+    <lastmod>2026-11-04T01:00:36Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/jichang-100gb-data-plan/</loc>
