@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://xiaolufei.blog/</loc>
-    <lastmod>2026-11-13T01:07:36Z</lastmod>
+    <lastmod>2026-11-14T01:10:26Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/categories/ai-tools/</loc>
@@ -10,23 +10,27 @@
   </url>
   <url>
     <loc>https://xiaolufei.blog/categories/jichang-vpn/</loc>
-    <lastmod>2026-11-12T01:03:12Z</lastmod>
+    <lastmod>2026-11-14T01:10:26Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/categories/jichang-vpn/page/2/</loc>
-    <lastmod>2026-11-12T01:03:12Z</lastmod>
+    <lastmod>2026-11-14T01:10:26Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/categories/jichang-vpn/page/3/</loc>
-    <lastmod>2026-11-12T01:03:12Z</lastmod>
+    <lastmod>2026-11-14T01:10:26Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/page/2/</loc>
-    <lastmod>2026-11-13T01:07:36Z</lastmod>
+    <lastmod>2026-11-14T01:10:26Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/page/3/</loc>
-    <lastmod>2026-11-13T01:07:36Z</lastmod>
+    <lastmod>2026-11-14T01:10:26Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xiaolufei.blog/page/4/</loc>
+    <lastmod>2026-11-14T01:09:37Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/ai-prompt-templates/</loc>
@@ -122,7 +126,11 @@
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/daily-2026-11-13-ai-document-version-compare/</loc>
-    <lastmod>2026-11-13T01:06:29Z</lastmod>
+    <lastmod>2026-11-14T01:10:26Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xiaolufei.blog/posts/daily-2026-11-14-vpn-dedicated-ip/</loc>
+    <lastmod>2026-11-14T01:09:37Z</lastmod>
   </url>
   <url>
     <loc>https://xiaolufei.blog/posts/jichang-100gb-data-plan/</loc>
