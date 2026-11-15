@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="paper">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Windows 代理客户端下载哪个安装包？x64 和 ARM64 这样选 · 小路带你飞</title>
+<meta name="description" content="Windows 代理客户端安装包怎么选？用通俗的文字讲清 x64、ARM64、WebView2 和源代码包的区别，教你查看系统类型并核对官方文件名，减少下错版本的麻烦。">
+<meta name="keywords" content="Windows代理客户端,x64和ARM64,Clash Verge Rev下载,WebView2安装包">
+<meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://xiaolufei.blog/posts/daily-2026-11-15-windows-client-installer/">
+<meta property="og:title" content="Windows 代理客户端下载哪个安装包？x64 和 ARM64 这样选">
+<meta property="og:description" content="Windows 代理客户端安装包怎么选？用通俗的文字讲清 x64、ARM64、WebView2 和源代码包的区别，教你查看系统类型并核对官方文件名，减少下错版本的麻烦。">
+<meta property="og:url" content="https://xiaolufei.blog/posts/daily-2026-11-15-windows-client-installer/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="小路带你飞">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://xiaolufei.blog/assets/media/d0e1710a-9c8b-4762-9357-b618425279cf.png"><meta property="og:image:alt" content="小路带你飞">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Windows 代理客户端下载哪个安装包？x64 和 ARM64 这样选">
+<meta name="twitter:description" content="Windows 代理客户端安装包怎么选？用通俗的文字讲清 x64、ARM64、WebView2 和源代码包的区别，教你查看系统类型并核对官方文件名，减少下错版本的麻烦。">
+<meta name="twitter:image" content="https://xiaolufei.blog/assets/media/d0e1710a-9c8b-4762-9357-b618425279cf.png">
+<meta name="author" content="小路带你飞"><meta property="article:published_time" content="2026-11-15T09:04:31&#43;08:00"><meta property="article:modified_time" content="2026-11-15T09:04:56&#43;08:00">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://xiaolufei.blog/posts/daily-2026-11-15-windows-client-installer/#article","@type":"BlogPosting","author":{"@type":"Person","name":"小路带你飞"},"dateModified":"2026-11-15T09:04:56+08:00","datePublished":"2026-11-15T09:04:31+08:00","description":"Windows 代理客户端安装包怎么选？用通俗的文字讲清 x64、ARM64、WebView2 和源代码包的区别，教你查看系统类型并核对官方文件名，减少下错版本的麻烦。","headline":"Windows 代理客户端下载哪个安装包？x64 和 ARM64 这样选","inLanguage":"zh-CN","mainEntityOfPage":{"@id":"https://xiaolufei.blog/posts/daily-2026-11-15-windows-client-installer/","@type":"WebPage"},"url":"https://xiaolufei.blog/posts/daily-2026-11-15-windows-client-installer/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://xiaolufei.blog/","name":"小路带你飞","position":1},{"@type":"ListItem","item":"https://xiaolufei.blog/posts/daily-2026-11-15-windows-client-installer/","name":"Windows 代理客户端下载哪个安装包？x64 和 ARM64 这样选","position":2}]}]}</script>
+
+<script>(()=>{let mode='system';try{const saved=localStorage.getItem('reader-theme');if(['system','light','dark'].includes(saved))mode=saved}catch{}const root=document.documentElement;root.dataset.colorMode=mode;root.classList.toggle('dark',mode==='dark'||(mode==='system'&&matchMedia('(prefers-color-scheme: dark)').matches))})();</script>
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/style.css">
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/advertisements.css">
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/search.css"><script defer src="https://xiaolufei.blog/assets/theme/search.js"></script>
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/layouts.css"><link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/effects.css"><link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/skin.css">
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/viewer.css">
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/reader.css">
+<link rel="icon" href="https://xiaolufei.blog/assets/media/d0e1710a-9c8b-4762-9357-b618425279cf.png">
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/artalk.css"><script defer src="https://xiaolufei.blog/assets/theme/artalk.js"></script>
+<script defer src="https://xiaolufei.blog/assets/theme/theme.js"></script>
+<script defer src="https://xiaolufei.blog/assets/theme/reader.js"></script>
+<script defer src="https://xiaolufei.blog/assets/theme/viewer.js"></script>
+<script defer src="https://xiaolufei.blog/assets/theme/image-viewer.js"></script>
+
+<script defer src="https://xiaolufei.blog/assets/theme/interactions.js"></script>
+
+<meta name="msvalidate.01" content="3D562902FFD6655EA5B649095B7D8365" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9NJRJJ7T9S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9NJRJJ7T9S');
+</script>
+
+<script defer src="https://xiaolufei.blog/assets/xblog/google-analytics.js" data-xblog-google-analytics="G-9NJRJJ7T9S" data-site-hosts="www.xiaolufei.blog,xiaolufei.blog"></script></head>
+
+<body class="reader-page theme-paper article-page">
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-header">
+<div class="header-inner">
+<a class="brand" href="https://xiaolufei.blog/"><img src="https://xiaolufei.blog/assets/media/d0e1710a-9c8b-4762-9357-b618425279cf.png" alt="" width="38" height="38"><span>小路带你飞</span></a>
+<nav id="site-navigation" aria-label="站点导航"><a href="https://xiaolufei.blog/">首页</a></nav>
+<a class="search-toggle" href="https://xiaolufei.blog/search/" data-open-dialog="search-dialog" aria-haspopup="dialog" aria-controls="search-dialog" aria-label="搜索" title="搜索"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></a>
+<button id="theme-mode" class="theme-toggle theme-cycle" type="button" aria-label="明暗模式：跟随系统，点击切换为明亮" title="跟随系统 · 点击切换为明亮">
+<svg class="theme-icon-system" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+<svg class="theme-icon-moon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.2 15.5A8.5 8.5 0 0 1 8.5 3.8 8.5 8.5 0 1 0 20.2 15.5Z"/></svg>
+<svg class="theme-icon-sun" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+</button>
+<span id="theme-mode-status" class="visually-hidden" role="status" aria-live="polite"></span>
+<button id="menu-toggle" class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="打开菜单" title="打开菜单">
+<svg class="menu-icon-open" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg class="menu-icon-close" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg>
+</button>
+</div>
+</header>
+
+<div class="page-viewport article-viewport"><div class="page-scroll article-scroll">
+<main id="main" tabindex="-1" class="paper-workspace theme-workspace theme-article">
+
+<nav class="breadcrumbs" aria-label="面包屑导航"><ol><li><a href="https://xiaolufei.blog/">小路带你飞</a></li><li><span aria-current="page">Windows 代理客户端下载哪个安装包？x64 和 ARM64 这样选</span></li></ol></nav>
+
+
+<div class="paper-reading"><div class="article-rail">
+<aside class="toc"><div>本篇目录</div><nav aria-label="文章目录"><a class="level-2" href="#heading">先查电脑，不用凭品牌猜</a><a class="level-2" href="#-x64">同样写着 x64，还要看文件结尾</a><a class="level-2" href="#-webview2-">大一圈的 WebView2 包要不要选</a><a class="level-2" href="#heading-1">拿一个例子走一遍</a></nav></aside>
+<aside class="ad-slot" aria-label="文章相关内容" data-ad-position="article_sidebar" data-pagefind-ignore><a class="ad-card ad-card-mixed" href="https://t.me/oldsix985" target="_blank" rel="sponsored noopener noreferrer" aria-label="广告位（在新标签页打开）" data-ad-link>
+<img class="ad-image" src="https://xiaolufei.blog/assets/media/bf95ebee-f4f9-4363-9a8c-586324a1687a.png" alt="广告位" loading="lazy" decoding="async">
+<div class="ad-copy"><h5>telegraph联系我</h5>
+</div>
+</a></aside></div><div class="paper-leaf">
+<article data-pagefind-body>
+<header class="article-header">
+<div class="eyebrow" data-pagefind-ignore>
+书中一页</div>
+<h1 data-pagefind-meta="title">Windows 代理客户端下载哪个安装包？x64 和 ARM64 这样选</h1>
+<div class="metadata" data-pagefind-ignore><span>小路带你飞</span><time datetime="2026-11-15T09:04:31&#43;08:00">2026-11-15</time><span><span id="page-views">—</span> 次阅读</span></div>
+<div class="chips" data-pagefind-ignore><a href="https://xiaolufei.blog/categories/jichang-vpn/">机场与VPN</a></div>
+</header>
+<div class="prose"><p>Windows 代理客户端该下载哪个安装包，先看电脑的系统类型，再找对应的 Windows 文件。x64、ARM64 表示适用的处理器类型，不是套餐档次。下面用 Clash Verge Rev 的官方文件作例子，帮你把下载列表看明白。</p>
+<h2 id="heading">先查电脑，不用凭品牌猜</h2>
+<p>打开“开始 → 设置 → 系统 → 关于”，在“设备规格”中找到“系统类型”，把整行看完。微软把操作系统位数和处理器类型都列在这里，不能只看到“64 位”就停下。<a href="https://support.microsoft.com/en-us/windows/experience/compatibility/32-bit-and-64-bit-windows-frequently-asked-questions">微软查看方法</a></p>
+<ul>
+<li>如果写着“64 位操作系统，基于 x64 的处理器”，找 Windows 的 x64 安装包。</li>
+<li>如果处理器类型写着 ARM，就对照项目的 ARM64 下载入口。</li>
+<li>如果是 32 位系统，而项目只提供 64 位版本，先确认支持范围，不要轮流下载碰运气。</li>
+</ul>
+<p>“架构”可以简单理解为处理器工作的类型。x64 包括 AMD64 和 Intel 64，不能按“我的电脑不是 AMD”来排除它。<a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/x64-architecture">微软 x64 说明</a></p>
+<p>还要顺手看一下项目支持哪些 Windows 版本。系统太旧和架构选错是两件事；如果不满足项目的系统要求，换成另一个架构也不能解决。更不能只把文件名里的 ARM64 改成 x64，名字变了，里面的程序不会跟着变。</p>
+<h2 id="-x64">同样写着 x64，还要看文件结尾</h2>
+<p>下载页常把多个系统的文件放在一起。以本次核对的 Clash Verge Rev 正式发布页为例，Windows 普通安装包的名字以 <code>x64-setup.exe</code> 或 <code>arm64-setup.exe</code> 结尾；macOS 文件中也有 x64，但结尾是 <code>.dmg</code>。所以，单看 x64 三个字符仍可能选错。<a href="https://github.com/clash-verge-rev/clash-verge-rev/releases/latest">官方发布页</a></p>
+<p>新手可以先找到页面里的“Windows”和“正常版本”区域，再点对应架构。文件名中间的数字是版本号，下载时以当前页面为准，不必照着旧教程找同一串数字。</p>
+<p>如果看到 <code>Source code (zip)</code>，那是项目源代码的压缩包，可以理解为制作软件的材料，不是本例中的 Windows 安装程序。下载后只有一堆文件夹，可能就是选到了这里。<a href="https://docs.github.com/en/repositories/working-with-files/using-files/downloading-source-code-archives">GitHub 源代码下载说明</a></p>
+<h2 id="-webview2-">大一圈的 WebView2 包要不要选</h2>
+<p>WebView2 是让软件显示网页式界面的组件，可以把它理解为负责把部分操作面板画出来的工具。<a href="https://learn.microsoft.com/en-us/microsoft-edge/webview2/">微软 WebView2 介绍</a></p>
+<p>Clash Verge Rev 另有内置这个组件的安装包，本次文件名带有 <code>fixed_webview2</code>。项目说明将它用于系统缺少且无法安装 WebView2 等情况，面板打不开时也可按官方说明尝试。普通使用先选正常版本，不必因为文件更大就优先下载。<a href="https://www.clashverge.dev/install.html">项目安装说明</a></p>
+<h2 id="heading-1">拿一个例子走一遍</h2>
+<p>假设你的系统类型写着“64 位操作系统，基于 x64 的处理器”，准备安装 Clash Verge Rev：</p>
+<ol>
+<li>从项目文档进入官方发布页，确认项目名是 <code>clash-verge-rev/clash-verge-rev</code>。</li>
+<li>找到 Windows 的正常版本，选择 x64 对应的安装文件。</li>
+<li>下载完成后，对照完整文件名，确认没有拿成 ARM64、macOS 文件或源代码包。</li>
+<li>按安装界面操作；若报错，记下完整提示，再查项目常见问题。</li>
+</ol>
+<p>遇到“此应用无法在你的电脑上运行”，先重新核对系统类型、系统支持范围和文件名。若软件已经能打开，只是没有节点，则进入了订阅配置这一步，不必继续换架构安装包。</p>
+<p>如果仍无法安装，求助时提供客户端名称、系统类型、下载的完整文件名和报错原文。不要只说“下载的是最新版”，同一版本也可能有多种安装包。公司电脑若提示需要管理员权限，应联系管理员确认；换架构不能替代授权。</p>
+<p>请保存官方入口，换电脑时重新查看系统类型。一次选对文件，比把下载列表逐个试一遍省事。</p>
+<p>资料核对日期：2026 年 11 月 15 日。文中的文件标记以当天官方资料为例，后续请以项目最新说明为准。</p>
+</div>
+<div class="article-likes" data-pagefind-ignore>
+<button id="page-like" class="like-button" type="button" aria-pressed="false" aria-describedby="page-like-message" disabled>
+<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+<span id="page-like-label">点赞</span><span id="page-like-count">—</span>
+</button><p id="page-like-message" role="status"></p>
+</div>
+
+<nav class="pagination" aria-label="相邻文章" data-pagefind-ignore><span></span><a href="https://xiaolufei.blog/posts/daily-2026-11-14-vpn-dedicated-ip/">下一篇 →</a></nav>
+<section class="comments-section" data-pagefind-ignore><h2>评论</h2><div id="comments"></div></section>
+</article>
+</div></div>
+
+</main>
+</div>
+<button id="back-to-top" class="back-to-top" type="button" aria-label="返回顶部" title="返回顶部" hidden>
+<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14M12 20V8m-5 5 5-5 5 5"/></svg>
+</button>
+</div>
+
+<footer class="site-footer">
+<nav class="friend-links" aria-label="友情链接"><span class="friend-links-label">友情链接</span><a href="https://t.me/oldsix985" target="_blank" rel="noopener noreferrer">Telegram联系我</a></nav>
+<span>© 2026小路的博客</span>
+</footer>
+
+
+
+<dialog id="search-dialog" class="reader-dialog site-search" aria-labelledby="search-title" data-reader-dialog data-pagefind-ignore>
+<header class="reader-dialog-header"><h2 id="search-title">搜索文章</h2><button class="dialog-close" type="button" data-close-dialog aria-label="关闭搜索" title="关闭搜索">×</button></header>
+<div class="reader-dialog-body">
+
+<div id="site-search-ui" data-module="https://xiaolufei.blog/pagefind/pagefind-component-ui.js" data-stylesheet="https://xiaolufei.blog/pagefind/pagefind-component-ui.css" hidden>
+
+<pagefind-config bundle-path="https://xiaolufei.blog/pagefind/" base-url="https://xiaolufei.blog/" lang="zh-cn" no-worker></pagefind-config>
+<pagefind-input placeholder="搜索文章标题或正文"></pagefind-input>
+<pagefind-summary></pagefind-summary>
+<pagefind-results></pagefind-results>
+</div>
+<p id="search-status" class="search-status" role="status">正在加载搜索…</p>
+<button id="search-retry" class="button" type="button" hidden>重新加载</button>
+
+</div>
+</dialog>
+
+<script id="blog-comments-config" type="application/json">{"comments":true,"likes":true,"locale":"zh-CN","pageKey":"/p/f031d3fe-2c9b-4d68-a82f-10bfcb01e9fb/","pageTitle":"Windows 代理客户端下载哪个安装包？x64 和 ARM64 这样选","server":"https://upfqpobmiewm.sealosgzg.site","site":"xblog-c12d4d98-1621-4683-befd-db0fba741ea1","views":true,"viewsBase":0}</script>
+
+</body>
+</html>
