@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="paper">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>路由器支持 VPN，家里设备就都能走 VPN 吗？ · 小路带你飞</title>
+<meta name="description" content="路由器支持 VPN 就能让全家设备使用吗？分清 VPN 客户端、服务器和 VPN 穿透，核对协议、配置文件及设备范围，避免选错功能或买到不兼容的型号。">
+<meta name="keywords" content="路由器VPN,VPN客户端和服务器,VPN穿透,路由器VPN设置">
+<meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://xiaolufei.blog/posts/daily-2026-11-17-router-vpn-client-server/">
+<meta property="og:title" content="路由器支持 VPN，家里设备就都能走 VPN 吗？">
+<meta property="og:description" content="路由器支持 VPN 就能让全家设备使用吗？分清 VPN 客户端、服务器和 VPN 穿透，核对协议、配置文件及设备范围，避免选错功能或买到不兼容的型号。">
+<meta property="og:url" content="https://xiaolufei.blog/posts/daily-2026-11-17-router-vpn-client-server/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="小路带你飞">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://xiaolufei.blog/assets/media/d0e1710a-9c8b-4762-9357-b618425279cf.png"><meta property="og:image:alt" content="小路带你飞">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="路由器支持 VPN，家里设备就都能走 VPN 吗？">
+<meta name="twitter:description" content="路由器支持 VPN 就能让全家设备使用吗？分清 VPN 客户端、服务器和 VPN 穿透，核对协议、配置文件及设备范围，避免选错功能或买到不兼容的型号。">
+<meta name="twitter:image" content="https://xiaolufei.blog/assets/media/d0e1710a-9c8b-4762-9357-b618425279cf.png">
+<meta name="author" content="小路带你飞"><meta property="article:published_time" content="2026-11-17T09:02:41&#43;08:00"><meta property="article:modified_time" content="2026-11-17T09:03:21&#43;08:00">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://xiaolufei.blog/posts/daily-2026-11-17-router-vpn-client-server/#article","@type":"BlogPosting","author":{"@type":"Person","name":"小路带你飞"},"dateModified":"2026-11-17T09:03:21+08:00","datePublished":"2026-11-17T09:02:41+08:00","description":"路由器支持 VPN 就能让全家设备使用吗？分清 VPN 客户端、服务器和 VPN 穿透，核对协议、配置文件及设备范围，避免选错功能或买到不兼容的型号。","headline":"路由器支持 VPN，家里设备就都能走 VPN 吗？","inLanguage":"zh-CN","mainEntityOfPage":{"@id":"https://xiaolufei.blog/posts/daily-2026-11-17-router-vpn-client-server/","@type":"WebPage"},"url":"https://xiaolufei.blog/posts/daily-2026-11-17-router-vpn-client-server/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://xiaolufei.blog/","name":"小路带你飞","position":1},{"@type":"ListItem","item":"https://xiaolufei.blog/posts/daily-2026-11-17-router-vpn-client-server/","name":"路由器支持 VPN，家里设备就都能走 VPN 吗？","position":2}]}]}</script>
+
+<script>(()=>{let mode='system';try{const saved=localStorage.getItem('reader-theme');if(['system','light','dark'].includes(saved))mode=saved}catch{}const root=document.documentElement;root.dataset.colorMode=mode;root.classList.toggle('dark',mode==='dark'||(mode==='system'&&matchMedia('(prefers-color-scheme: dark)').matches))})();</script>
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/style.css">
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/advertisements.css">
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/search.css"><script defer src="https://xiaolufei.blog/assets/theme/search.js"></script>
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/layouts.css"><link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/effects.css"><link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/skin.css">
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/viewer.css">
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/reader.css">
+<link rel="icon" href="https://xiaolufei.blog/assets/media/d0e1710a-9c8b-4762-9357-b618425279cf.png">
+<link rel="stylesheet" href="https://xiaolufei.blog/assets/theme/artalk.css"><script defer src="https://xiaolufei.blog/assets/theme/artalk.js"></script>
+<script defer src="https://xiaolufei.blog/assets/theme/theme.js"></script>
+<script defer src="https://xiaolufei.blog/assets/theme/reader.js"></script>
+<script defer src="https://xiaolufei.blog/assets/theme/viewer.js"></script>
+<script defer src="https://xiaolufei.blog/assets/theme/image-viewer.js"></script>
+
+<script defer src="https://xiaolufei.blog/assets/theme/interactions.js"></script>
+
+<meta name="msvalidate.01" content="3D562902FFD6655EA5B649095B7D8365" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9NJRJJ7T9S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9NJRJJ7T9S');
+</script>
+
+<script defer src="https://xiaolufei.blog/assets/xblog/google-analytics.js" data-xblog-google-analytics="G-9NJRJJ7T9S" data-site-hosts="www.xiaolufei.blog,xiaolufei.blog"></script></head>
+
+<body class="reader-page theme-paper article-page">
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-header">
+<div class="header-inner">
+<a class="brand" href="https://xiaolufei.blog/"><img src="https://xiaolufei.blog/assets/media/d0e1710a-9c8b-4762-9357-b618425279cf.png" alt="" width="38" height="38"><span>小路带你飞</span></a>
+<nav id="site-navigation" aria-label="站点导航"><a href="https://xiaolufei.blog/">首页</a></nav>
+<a class="search-toggle" href="https://xiaolufei.blog/search/" data-open-dialog="search-dialog" aria-haspopup="dialog" aria-controls="search-dialog" aria-label="搜索" title="搜索"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></a>
+<button id="theme-mode" class="theme-toggle theme-cycle" type="button" aria-label="明暗模式：跟随系统，点击切换为明亮" title="跟随系统 · 点击切换为明亮">
+<svg class="theme-icon-system" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+<svg class="theme-icon-moon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.2 15.5A8.5 8.5 0 0 1 8.5 3.8 8.5 8.5 0 1 0 20.2 15.5Z"/></svg>
+<svg class="theme-icon-sun" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+</button>
+<span id="theme-mode-status" class="visually-hidden" role="status" aria-live="polite"></span>
+<button id="menu-toggle" class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="打开菜单" title="打开菜单">
+<svg class="menu-icon-open" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+<svg class="menu-icon-close" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg>
+</button>
+</div>
+</header>
+
+<div class="page-viewport article-viewport"><div class="page-scroll article-scroll">
+<main id="main" tabindex="-1" class="paper-workspace theme-workspace theme-article">
+
+<nav class="breadcrumbs" aria-label="面包屑导航"><ol><li><a href="https://xiaolufei.blog/">小路带你飞</a></li><li><span aria-current="page">路由器支持 VPN，家里设备就都能走 VPN 吗？</span></li></ol></nav>
+
+
+<div class="paper-reading"><div class="article-rail">
+<aside class="toc"><div>本篇目录</div><nav aria-label="文章目录"><a class="level-2" href="#heading">三种功能，先分清连接方向</a><a class="level-2" href="#heading-1">有客户端，还要和服务对得上</a><a class="level-2" href="#heading-2">路由器连上了，也要看设备名单</a><a class="level-2" href="#heading-3">买之前，把问题问具体</a></nav></aside>
+<aside class="ad-slot" aria-label="文章相关内容" data-ad-position="article_sidebar" data-pagefind-ignore><a class="ad-card ad-card-mixed" href="https://t.me/oldsix985" target="_blank" rel="sponsored noopener noreferrer" aria-label="广告位（在新标签页打开）" data-ad-link>
+<img class="ad-image" src="https://xiaolufei.blog/assets/media/bf95ebee-f4f9-4363-9a8c-586324a1687a.png" alt="广告位" loading="lazy" decoding="async">
+<div class="ad-copy"><h5>telegraph联系我</h5>
+</div>
+</a></aside></div><div class="paper-leaf">
+<article data-pagefind-body>
+<header class="article-header">
+<div class="eyebrow" data-pagefind-ignore>
+书中一页</div>
+<h1 data-pagefind-meta="title">路由器支持 VPN，家里设备就都能走 VPN 吗？</h1>
+<div class="metadata" data-pagefind-ignore><span>小路带你飞</span><time datetime="2026-11-17T09:02:41&#43;08:00">2026-11-17</time><span><span id="page-views">—</span> 次阅读</span></div>
+<div class="chips" data-pagefind-ignore><a href="https://xiaolufei.blog/categories/jichang-vpn/">机场与VPN</a></div>
+</header>
+<div class="prose"><p>路由器写着“支持 VPN”，不代表连上家里 Wi-Fi 的设备就都会走 VPN。想让路由器统一连接已有的 VPN 服务，通常要找“VPN 客户端”功能，再核对服务是否兼容，以及哪些设备被安排使用这条连接。只看到商品页上的 VPN 三个字，还不足以判断能不能用。</p>
+<h2 id="heading">三种功能，先分清连接方向</h2>
+<p>可以把路由器上的常见名称这样理解：</p>
+<table>
+<thead>
+<tr>
+<th>功能名称</th>
+<th>主要做什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VPN 客户端（Client）</td>
+<td>由路由器主动连接远处的 VPN 服务</td>
+</tr>
+<tr>
+<td>VPN 服务器（Server）</td>
+<td>接受外部设备连接，例如人在外面时连回家中网络</td>
+</tr>
+<tr>
+<td>VPN 穿透（Passthrough）</td>
+<td>让其他设备建立的 VPN 通信通过路由器</td>
+</tr>
+</tbody>
+</table>
+<p>TP-Link 的说明明确区分了客户端和服务器，也提醒部分型号可能只支持服务器功能。因此，如果你的目标是让家里的电视连接已有服务，就要继续找客户端支持情况。<a href="https://www.tp-link.com/us/support/faq/3799/">官方功能说明</a></p>
+<p>“穿透”也容易看错。它可以理解为允许相关通信经过，不能据此判断路由器自己能登录服务、替所有设备建立连接。TP-Link 特别说明，穿透不代表路由器能够充当 VPN 连接端点。<a href="https://www.tp-link.com/au/support/faq/558/">VPN 穿透说明</a></p>
+<h2 id="heading-1">有客户端，还要和服务对得上</h2>
+<p>接下来要核对“协议”，也就是双方约定的连接方式。路由器和服务商需要支持相配的方式，不能只看两边都有 VPN 字样。</p>
+<p>例如，Proton VPN 的路由器说明要求设备支持 OpenVPN 或 WireGuard 的客户端功能。这里关键的是“作为客户端”，仅有同名的服务器菜单仍然不够。<a href="https://protonvpn.com/support/installing-protonvpn-on-a-router">Proton 路由器要求</a></p>
+<p>配置资料也要对应。以 TP-Link 的 OpenVPN 客户端教程为例，需要从服务商取得 <code>.ovpn</code> 配置文件，也就是保存连接地址和参数的文件；账号信息则按服务要求填写。<a href="https://www.tp-link.com/us/support/faq/3135/">客户端配置说明</a></p>
+<p>如果机场后台只给了一条订阅链接，先问清它适用于哪个客户端、路由器能否读取。不能直接把任意订阅链接当成上述配置文件。建议把“路由器型号、客户端支持的协议、服务商提供的文件格式”放在一起核对，避免买完才发现两边接不上。</p>
+<h2 id="heading-2">路由器连上了，也要看设备名单</h2>
+<p>有些路由器允许选择哪些设备走 VPN。TP-Link 的上述教程要求把设备加入名单，未加入的设备继续使用原来的上网连接。因此，管理页显示已连接，还需要检查名单里有没有你真正要用的设备。<a href="https://www.tp-link.com/us/support/faq/3135/">设备选择步骤</a></p>
+<p>假设你希望电视走 VPN，工作电脑保持原来的连接，可以先确认路由器是否支持这种选择方式。设置时认准设备名称；如果名称相似，就对照设备自身显示的网络信息。之后分别在电视和电脑上检查需要使用的功能，不能只拿手机上的结果代替其他设备。</p>
+<h2 id="heading-3">买之前，把问题问具体</h2>
+<p>可以直接把下面这段话发给商家或技术支持：</p>
+<blockquote>
+<p>我准备让家里的电视通过路由器连接某项服务。这个具体型号支持 VPN 客户端吗？支持哪种协议，需要哪种配置文件？能否只让指定设备使用？我当前的系统版本能设置吗？</p>
+</blockquote>
+<p>如果已经有路由器，先从管理页记录型号和固件版本。固件就是路由器自身运行的软件，再按厂家对应说明查功能；服务商一侧也要确认支持路由器连接及套餐使用规则。</p>
+<p>先确认连接方向，再核对协议、资料和设备范围，就能把“支持 VPN”这句宣传变成可以逐项确认的需求。</p>
+<p>资料核对日期：2026 年 11 月 17 日。本文用官方文档解释功能，不代表同品牌全部型号都有相同支持。</p>
+</div>
+<div class="article-likes" data-pagefind-ignore>
+<button id="page-like" class="like-button" type="button" aria-pressed="false" aria-describedby="page-like-message" disabled>
+<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+<span id="page-like-label">点赞</span><span id="page-like-count">—</span>
+</button><p id="page-like-message" role="status"></p>
+</div>
+
+<nav class="pagination" aria-label="相邻文章" data-pagefind-ignore><span></span><a href="https://xiaolufei.blog/posts/daily-2026-11-16-android-vpn-screen-lock/">下一篇 →</a></nav>
+<section class="comments-section" data-pagefind-ignore><h2>评论</h2><div id="comments"></div></section>
+</article>
+</div></div>
+
+</main>
+</div>
+<button id="back-to-top" class="back-to-top" type="button" aria-label="返回顶部" title="返回顶部" hidden>
+<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14M12 20V8m-5 5 5-5 5 5"/></svg>
+</button>
+</div>
+
+<footer class="site-footer">
+<nav class="friend-links" aria-label="友情链接"><span class="friend-links-label">友情链接</span><a href="https://t.me/oldsix985" target="_blank" rel="noopener noreferrer">Telegram联系我</a></nav>
+<span>© 2026小路的博客</span>
+</footer>
+
+
+
+<dialog id="search-dialog" class="reader-dialog site-search" aria-labelledby="search-title" data-reader-dialog data-pagefind-ignore>
+<header class="reader-dialog-header"><h2 id="search-title">搜索文章</h2><button class="dialog-close" type="button" data-close-dialog aria-label="关闭搜索" title="关闭搜索">×</button></header>
+<div class="reader-dialog-body">
+
+<div id="site-search-ui" data-module="https://xiaolufei.blog/pagefind/pagefind-component-ui.js" data-stylesheet="https://xiaolufei.blog/pagefind/pagefind-component-ui.css" hidden>
+
+<pagefind-config bundle-path="https://xiaolufei.blog/pagefind/" base-url="https://xiaolufei.blog/" lang="zh-cn" no-worker></pagefind-config>
+<pagefind-input placeholder="搜索文章标题或正文"></pagefind-input>
+<pagefind-summary></pagefind-summary>
+<pagefind-results></pagefind-results>
+</div>
+<p id="search-status" class="search-status" role="status">正在加载搜索…</p>
+<button id="search-retry" class="button" type="button" hidden>重新加载</button>
+
+</div>
+</dialog>
+
+<script id="blog-comments-config" type="application/json">{"comments":true,"likes":true,"locale":"zh-CN","pageKey":"/p/75588700-acb8-4d33-b383-635c55831390/","pageTitle":"路由器支持 VPN，家里设备就都能走 VPN 吗？","server":"https://upfqpobmiewm.sealosgzg.site","site":"xblog-c12d4d98-1621-4683-befd-db0fba741ea1","views":true,"viewsBase":0}</script>
+
+</body>
+</html>
